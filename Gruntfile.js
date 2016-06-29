@@ -26,6 +26,7 @@ module.exports = function (grunt) {
         jsPathPlugins: "assets/js/plugins/",
         imagePath: "assets/images/",
         fontsPath: "assets/fonts/",
+	      fontsPathLato: "assets/fonts/lato/",
         htmlPath: "assets/html/"
     },
 			dist:{
@@ -36,6 +37,7 @@ module.exports = function (grunt) {
         jsPathPlugins: "dist/js/plugins/",
         imagePath: "dist/images/",
         fontsPath: "dist/fonts/",
+				fontsPathLato: "dist/fonts/lato/",
         htmlPath: "dist/"
 			}
 		},
@@ -98,7 +100,7 @@ module.exports = function (grunt) {
 				stripBanners: true
 			},
 			plugins: {
-				src: ["<%= fileDir.src.jsPathPlugins %>*.min.js"],
+				src: ["<%= fileDir.src.jsPathPlugins %>*.js"],
 				dest: "<%= fileDir.tempPath %>js/plugins.min.js"
 			},
 			app: {
@@ -133,6 +135,7 @@ module.exports = function (grunt) {
 					{expand: true, cwd: "<%= fileDir.src.cssPath %>",src: "*", dest: "<%= fileDir.dist.cssPath %>"},
 					{expand: true, cwd: "<%= fileDir.src.imagePath %>",src: "*", dest: "<%= fileDir.dist.imagePath %>"},
 					{expand: true, cwd: "<%= fileDir.src.fontsPath %>",src: "*", dest: "<%= fileDir.dist.fontsPath %>"},
+					{expand: true, cwd: "<%= fileDir.src.fontsPathLato %>",src: "*", dest: "<%= fileDir.dist.fontsPathLato %>"},
 					{expand: true, cwd: "<%= fileDir.src.jsPathVendor %>",src: "*", dest: "<%= fileDir.dist.jsPathVendor %>"},
 					{expand: true, cwd: "<%= fileDir.tempPath %>js/",src: "plugins.min.js", dest: "<%= fileDir.dist.jsPathPlugins %>"}
 				]

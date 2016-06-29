@@ -1,3 +1,34 @@
-h1{
-	color: red;
+@font-face {
+	font-family: "Proxima Nova";
+	src: url("/css/fonts/proximanova/proximanova-regular-latin.woff") format("woff"),url("/css/fonts/proximanova/proximanova-regular-latin.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal
+}
+
+@font-face {
+	font-family: "Proxima Nova";
+	src: url("/css/fonts/proximanova/proximanova-semibold-latin.woff") format("woff"),url("/css/fonts/proximanova/proximanova-semibold-latin.ttf") format("truetype");
+	font-weight: bold;
+	font-style: normal
+}
+
+@font-face {
+	font-family: "Lato";
+	src: url("/css/fonts/lato/lato-thin-latin.woff") format("woff"),url("/css/fonts/lato/lato-thin-latin.ttf") format("truetype");
+	font-weight: 100;
+	font-style: normal
+}
+
+@font-face {
+	font-family: "Lato";
+	src: url("/../fonts/lato/lato-light-latin.woff") format("woff"),url("/css/fonts/lato/lato-light-latin.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal
+}
+
+@font-face {
+	font-family: "Lato";
+	src: url("/css/fonts/lato/lato-light-italic-latin.woff") format("woff"),url("/css/fonts/lato/lato-light-italic-latin.ttf") format("truetype");
+	font-weight: normal;
+	font-style: italic
 }
