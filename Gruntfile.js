@@ -87,6 +87,10 @@ module.exports = function (grunt) {
 					interrupt: true
 				}
 			},
+			html: {
+				files: ["<%= fileDir.src.path %>**/*.{html,htm}"],
+				tasks: ["copy:htmlfiles"]
+			},
 			reload: {
 				files: ["<%= fileDir.dist.path %>**/*.*"],
 				options: {

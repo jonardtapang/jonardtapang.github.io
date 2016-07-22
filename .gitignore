@@ -5,5 +5,4 @@ out
 gen
 /.temp/
 /.sass-cache/
-/assets/
 /node_modules/
